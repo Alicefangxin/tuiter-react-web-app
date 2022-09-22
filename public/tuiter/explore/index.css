@@ -3,19 +3,44 @@ body{
     background-color: black;
     color: white;
 }
+span {
+    content: "\2699";
+    display: inline;
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 50px;
+    width: 600px;
+    height: 30px;
+    border-top-color: gray;
+}
 
 .wd-nav-tabs {
     width: 100%;
     color:rgb(29,161,242);
     padding: 0px;
+    margin-left: -50px;
 }
 
 .wd-nav-tabs li {
     list-style-type: none;
     display: inline-block;
+    text-indent: 50px;
 }
 
 .wd-nav-tabs .wd-selected {
     border-bottom: solid 4px rgb(29,161,242);
-
 }
+
+img {
+    border-radius: 20%;
+    float: right;
+    margin-right: 16px;
+    display: inline;
+}
+span {
+    content: "\22EF";
+    float: right;
+    display: inline;
+}
+
