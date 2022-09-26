@@ -10,6 +10,7 @@ body{
     padding: 5px;
 }
 
+
 .wd-rounded-corners-all-around {
     border-radius: 50px;
     width: 600px;
@@ -17,6 +18,7 @@ body{
     background-color: darkgray;
     color: white;
     border-style: none;
+    padding-left: 80px;
 }
 
 .wd-nav-tabs {
@@ -28,13 +30,14 @@ body{
     position: relative;
     overflow: hidden;
 }
+
 .wd-gear {
     color: rgb(29,161,242);
     display: inline;
     content: "\2699";
     font-size: 30px;
     position: absolute;
-    margin-left: 12px;
+    margin-left: 12px;gi
 }
 
 .wd-nav-tabs li a{
