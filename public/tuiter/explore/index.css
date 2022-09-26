@@ -1,46 +1,141 @@
 body{
     font-family: "Arial";
     background-color: black;
+    border-color: rgb(47,51,54);
+    border-style: solid;
     color: white;
+    padding-left: 16px;
 }
-span {
-    content: "\2699";
-    display: inline;
+.wd-top {
+    padding: 5px;
 }
 
 .wd-rounded-corners-all-around {
     border-radius: 50px;
     width: 600px;
     height: 30px;
-    border-top-color: gray;
+    background-color: darkgray;
+    color: white;
+    border-style: none;
 }
 
 .wd-nav-tabs {
     width: 100%;
     color:rgb(29,161,242);
     padding: 0px;
-    margin-left: -50px;
-}
-
-.wd-nav-tabs li {
     list-style-type: none;
-    display: inline-block;
-    text-indent: 50px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.wd-gear {
+    color: rgb(29,161,242);
+    display: inline;
+    content: "\2699";
+    font-size: 30px;
+    position: absolute;
+    margin-left: 12px;
 }
 
-.wd-nav-tabs .wd-selected {
+.wd-nav-tabs li a{
+    float: left;
+    text-decoration: none;
+    font-size: 15px;
+    padding-left: 16px;
+    color: rgb(29,161,242);
+}
+
+.wd-selected {
+    float: left;
     border-bottom: solid 4px rgb(29,161,242);
+    text-decoration: none;
+    color: rgb(29,161,242);
+    font-size: 15px;
+    padding-left: 16px;
 }
 
-img {
-    border-radius: 20%;
-    float: right;
+.wd-unselected {
+    float:left;
+    text-decoration: none;
+    color: rgb(110,118,125);
+    font-size:15px;
+}
+
+.wd-content2 {
+    clear: both;
+    padding-left: 16px;
+}
+
+.wd-topic {
+    font-size: 13px;
+    color: rgb(110,118,125);
+
+}
+
+.wd-title {
+    color: white;
+    font-weight: 600;
+}
+
+.wd-num-tuits {
+    font-size: 13px;
+    color: rgb(110,118,125)
+}
+
+.wd-dots-1 {
+    content: "\22EF";
+    color:white;
+    font-size:20px;
+    float:right;
+    margin-right: 16px;
+    display: inline;
+    font-weight: bold;
+
+}
+
+.wd-dots-2 {
+    content: "\22EF";
+    color:rgb(110,118,125);
+    font-size:20px;
+    float:right;
     margin-right: 16px;
     display: inline;
 }
-span {
-    content: "\22EF";
-    float: right;
-    display: inline;
+
+.wd-author {
+    color: white;
 }
+
+.wd-news-img {
+    border-radius: 20%;
+    float: right;
+    height: 100px;
+    width:100px;
+    margin-right: 16px;
+    padding: 16px;
+    margin-top: -20px;
+}
+
+.wd-hr-others {
+    background-color:rgb(47,51,54);
+    border-style: solid;
+    height: 1px;
+    border: 0;
+    margin-top: 60px;
+}
+
+.wd-hr-bold {
+    height: 3px;
+    background-color: rgb(47,51,54);
+    border: none;
+
+
+}
+.wd-hr-thin {
+    background-color:rgb(47,51,54);
+    border-style: solid;
+    height: 1px;
+    border: 0;
+}
+
 

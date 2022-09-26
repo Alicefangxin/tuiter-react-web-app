@@ -1,3 +1,9 @@
+body{
+    font-family: "Arial";
+    background-color: black;
+    color: white;
+    border-color: rgb(47, 51, 54);
+}
 .wd-title {
     color: white;
     font-size: 20px;
@@ -12,20 +18,22 @@
     color: lightgray;
     font-size: 13px;
     display: inline;
+    margin-left: 12px;
 }
 .wd-id-margin-left {
     margin-left: 16px;
 }
-
-body{
-    font-family: "Arial";
-    background-color: black;
-    color: white;
+.wd-id-margin-top {
+    margin-top: 5px;
 }
+
+
 span {
     content: "\22EF";
     float: right;
     display: inline;
+    font-weight: bold;
+
 }
 .wd-border-thin {
     border-width: 1px;
@@ -33,15 +41,14 @@ span {
 .wd-border-solid {
     border-style: solid;
 }
-.wd-border-color {
-    border-color: lightgray;
-}
+
 
 .wd-img {
     width:48px;
     height: 48px;
     border-radius: 48%;
     margin-left: 16px;
+    margin-right: 12px;
     margin-top: 12px;
     display: inline-block;
 }
@@ -64,10 +71,25 @@ span {
     font-size: 15px;
     width: 506px;
     margin-left: 80px;
+    margin-right: 16px;
+    margin-bottom: 12px;
 }
 
 .wd-main-img {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     margin-left: 80px;
+    width: 504px;
+    height: 264px;
+
 }
+
+
+
+
+
+
+
+
+
+
