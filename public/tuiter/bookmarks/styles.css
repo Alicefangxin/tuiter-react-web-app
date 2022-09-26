@@ -80,6 +80,11 @@ body{
     margin-bottom: 12px;
 }
 
+.wd-tuiter-content {
+    border: 1px solid rgb(110, 118, 125);
+    border-radius: 20px;
+}
+
 .wd-content-img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -92,6 +97,10 @@ body{
     border-bottom-width: 0px;
 }
 
+.wd-content-padding {
+    padding: 12px;
+}
+
 .wd-content-title {
     font-weight: bold;
     font-size: 15px;
@@ -101,6 +110,7 @@ body{
 .wd-content-body {
     font-size: 15px;
     color: rgb(110,118,125);
+
 }
 .wd-content-link {
     font-size: 15px;
