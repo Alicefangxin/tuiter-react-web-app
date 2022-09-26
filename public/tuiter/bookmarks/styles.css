@@ -1,60 +1,59 @@
 body{
     font-family: "Arial";
     background-color: black;
+    border-style: solid;
     color: white;
     border-color: rgb(47, 51, 54);
+    padding-left: 16px;
 }
+
 .wd-title {
     color: white;
     font-size: 20px;
-}
-.wd-margin-title-left {
-    margin-left: 16px;
-}
-.wd-margin-title-top {
     margin-top: 12px;
 }
+
 .wd-id {
-    color: lightgray;
+    clear: both;
+    color: rgb(110,118,125);
     font-size: 13px;
-    display: inline;
-    margin-left: 12px;
-}
-.wd-id-margin-left {
-    margin-left: 16px;
-}
-.wd-id-margin-top {
-    margin-top: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(110,118,125);
+    border-bottom-width: 1px;
+    margin-bottom: 12px;
 }
 
-
-span {
+.wd-dots-1 {
     content: "\22EF";
-    float: right;
+    color:white;
+    font-size:20px;
+    float:right;
+    margin-right: 16px;
     display: inline;
     font-weight: bold;
 
 }
-.wd-border-thin {
-    border-width: 1px;
-}
-.wd-border-solid {
-    border-style: solid;
-}
-
 
 .wd-img {
     width:48px;
     height: 48px;
     border-radius: 48%;
-    margin-left: 16px;
     margin-right: 12px;
-    margin-top: 12px;
-    display: inline-block;
+    display: flex;
+}
+
+.wd-id-info {
+    align-items: flex-start;
+    display: flex;
+}
+
+.wd-tuiter-posts {
+    color: white;
+    max-width: 506px;
+    margin-bottom: 12px;
 }
 
 .wd-author {
-    margin-left: 12px;
     font-size: 15px;
     color: white;
     display: inline;
@@ -62,34 +61,99 @@ span {
 
 .wd-handle {
     font-size: 15px;
-    color: lightgray;
+    color: rgb(110,118,125);
+}
+
+.wd-dots-2 {
+    content: "\22EF";
+    color:white;
+    font-size:20px;
+    float:right;
+    margin-right: 16px;
     display: inline;
 }
 
 .wd-main-content {
     color: white;
     font-size: 15px;
-    width: 506px;
-    margin-left: 80px;
-    margin-right: 16px;
+    max-width: 506px;
     margin-bottom: 12px;
 }
 
-.wd-main-img {
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    margin-left: 80px;
+.wd-content-img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     width: 504px;
     height: 264px;
+    display: flex;
+    overflow: auto;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(110,118,125);
+    border-bottom-width: 0px;
+}
+
+.wd-content-title {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+
+.wd-content-body {
+    font-size: 15px;
+    color: rgb(110,118,125);
+}
+.wd-content-link {
+    font-size: 15px;
+    color: rgb(110,118,125);
+    float: left;
+}
+
+.wd-link {
+    float: left;
+}
+
+.wd-link-container {
+    text-align: left;
+}
+
+.wd-link-container-together {
+    display: inline-block;
+    vertical-align: middle;
 
 }
 
 
+i {
+    padding-left: 75px;
+    padding-right: 12px;
+    color: rgb(110,118,125)
+}
 
+.wd-like {
+    color: red;
+}
+.wd-comments {
+    padding-left: 0px;
+    padding-right: 12px;
+    color: rgb(110,118,125)
+}
 
+.wd-icon-retweet {
+    color: rgb(110,118,125);
+    font-size: 12px;
+}
 
+.wd-icon-like {
+    color: red;
+    font-size: 12px;
+}
 
+.wd-icon-comments {
+    font-size: 12px;
+    color: rgb(110,118,125);
+}
 
-
-
+.wd-icons {
+    text-align: center;
+}
 
