@@ -2,7 +2,6 @@ body{
     font-family: "Arial";
     background-color: black;
     border-style: solid;
-    color: white;
     border-color: rgb(47, 51, 54);
     padding-left: 16px;
 }
@@ -21,11 +20,13 @@ body{
     border-bottom-color: rgb(110,118,125);
     border-bottom-width: 1px;
     margin-bottom: 12px;
+    padding-bottom: 12px;
+
 }
 
 .wd-dots-1 {
     content: "\22EF";
-    color:white;
+    color:rgb(29,161,242);
     font-size:20px;
     float:right;
     margin-right: 16px;
@@ -41,7 +42,6 @@ body{
     margin-right: 12px;
     display: flex;
 }
-
 .wd-id-info {
     align-items: flex-start;
     display: flex;
@@ -78,6 +78,7 @@ body{
     font-size: 15px;
     max-width: 506px;
     margin-bottom: 12px;
+    margin-top: 12px;
 }
 
 .wd-tuiter-content {
@@ -110,16 +111,20 @@ body{
 .wd-content-body {
     font-size: 15px;
     color: rgb(110,118,125);
-
+    margin-top: 12px;
+    margin-bottom: 0px;
 }
 .wd-content-link {
+    margin-top: 12px;
     font-size: 15px;
     color: rgb(110,118,125);
     float: left;
+    margin-bottom: 12px;
 }
 
 .wd-link {
     float: left;
+
 }
 
 .wd-link-container {
@@ -130,40 +135,44 @@ body{
     display: inline-block;
     vertical-align: middle;
 
+
 }
 
-
-i {
-    padding-left: 75px;
-    padding-right: 12px;
-    color: rgb(110,118,125)
-}
-
-.wd-like {
-    color: red;
-}
-.wd-comments {
-    padding-left: 0px;
-    padding-right: 12px;
-    color: rgb(110,118,125)
-}
-
-.wd-icon-retweet {
+.wd-icons a {
+    padding: 12px;
     color: rgb(110,118,125);
-    font-size: 12px;
-}
-
-.wd-icon-like {
-    color: red;
-    font-size: 12px;
+    text-decoration: none;
+    margin-left: 12px;
 }
 
 .wd-icon-comments {
     font-size: 12px;
     color: rgb(110,118,125);
+    padding-left: 5px;
+    padding-right: 16px;
 }
 
-.wd-icons {
-    text-align: center;
+.wd-icon-retweet {
+    color: rgb(110,118,125);
+    font-size: 12px;
+    padding-left: 35px;
+    padding-right: 16px;
 }
+
+.wd-icon-like {
+    color: red;
+    font-size: 12px;
+    padding-left: 35px;
+    padding-right: 16px;
+}
+
+
+
+.wd-icon-share {
+    font-size: 12px;
+    padding-left: 35px;
+    padding-right: 16px;
+    color: rgb(110,118,125);
+}
+
 
