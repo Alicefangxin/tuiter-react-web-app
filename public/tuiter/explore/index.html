@@ -11,12 +11,12 @@
 </head>
 <body>
 
-    <div class="container pt-3">
+    <div class="container pt-3 pb-3">
         <div class="row">
             <div class="col-2">
                 <div class="list-group">
                     <a href="#"
-                       class="list-group-item list-group-item-action"><i class="fab fa-twitter"></i>
+                       class="list-group-item list-group-item-action"><i class="fa-solid fa-t"></i>
                     </a>
                     <a href="https://a3--mellow-kashata-a59042.netlify.app/tuiter/home.html"
                        class="list-group-item list-group-item-action"><i class="fa-solid fa-house"></i>
@@ -47,7 +47,18 @@
                 </button>
             </div>
             <div class="col-6">
-                <input class="form-control rounded-pill" placeholder="Search Tuiter" type="text"/>
+                <div class="row">
+                    <div class="col-10">
+                        <div class="position-relative">
+                            <span class="position-absolute wd-search-tuiter"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input class="ps-5 form-control rounded-pill" placeholder="Search Tuiter" type="text"/>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <span><a class="wd-gear" href="explore-settings.html"><i class="fa-solid fa-gear"></i></a></span>
+                    </div>
+                </div>
+
                 <ul class="nav nav-tabs mt-1">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">For you</a>
@@ -80,8 +91,8 @@
                         <div class="row">
                             <div class="col-9">
                                 <div class="text-secondary">Web Development</div>
-                                <div class="fw-bolder">ReactJS</div>
-                                <div class="text-secondary">- 2h</div>
+                                <div class="fw-bolder d-inline-flex">ReactJS</div><i class="fa-solid fa-circle-check d-inline-flex ms-1"></i>
+                                <div class="text-secondary d-inline-flex">- 2h</div>
                                 <div class="fw-bolder">React.js is a component based front end library that makes it very
                                     easy to build Single Page Applications or SPAs</div>
                             </div>
@@ -92,15 +103,14 @@
                     <li class="list-group-item">
                         <div class="row">
                             <div class="col-9">
-                                <div class="fw-bolder">JavaScript</div>
-                                <div class="text-secondary">- 2h</div>
+                                <div class="fw-bolder d-inline-flex">JavaScript</div><i class="fa-solid fa-circle-check d-inline-flex ms-1"></i>
+                                <div class="text-secondary d-inline-flex">- 2h</div>
                                 <div class="fw-bolder">JavaScript is a programming language that can run on browsers as well as desktops</div>
                                 <div class="text-secondary">123K Tuits</div>
                             </div>
                             <div class="col-3"><img class="float-end" src="../../images/js-logo.jpg" height="100px"></div>
                         </div>
                     </li>
-
                     <li class="list-group-item">
                         <div class="row">
                             <div class="col-9">
@@ -111,26 +121,113 @@
                             <div class="col-3"><img class="float-end" src="../../images/jquery-logo.jpg" height="100px"></div>
                         </div>
                     </li>
-
                     <li class="list-group-item">
                         <div class="row">
                             <div class="col-9">
                                 <div class="text-secondary">Web Development</div>
-                                <div class="fw-bolder">NodeJS</div>
-                                <div class="text-secondary">- 2h</div>
+                                <div class="fw-bolder d-inline-flex">NodeJS</div><i class="fa-solid fa-circle-check d-inline-flex ms-1"></i>
+                                <div class="text-secondary d-inline-flex">- 2h</div>
                                 <div class="text-secondary">123K Tuits</div>
                             </div>
                             <div class="col-3"><img class="float-end" src="../../images/nodejs.jpg" height="100px"></div>
                         </div>
                     </li>
                 </ul>
-                <!--who to follow-->
-            </div>
-            <div class="col-4">
-                Who to Follow
             </div>
 
+
+            <div class="col-4 list-group">
+                <li class="list-group-item">
+                    <div>Who to Follow</div>
+                </li>
+
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-3"><img class="float-end rounded-pill" src="../../images/javalogo.png" height="100px"></div>
+                        <div class="col-6">
+                            <div class="fw-bolder d-inline-flex">Java</div><i class="fa-solid fa-circle-check d-inline-flex ms-1"></i>
+                            <div class="text-secondary">@Java</div>
+                        </div>
+                        <div class="col-3">
+                            <a class="m-2 btn btn-primary btn-sm rounded-pill text-right float-end" href="#"
+                               role="button">Follow</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-3"><img class="float-end rounded-pill" src="../../images/relativitylogo.jpg" height="100px"></div>
+                        <div class="col-6">
+                            <div class="fw-bolder d-inline-flex">Relativity Space</div><i class="fa-solid fa-circle-check d-inline-flex ms-1"></i>
+                            <div class="text-secondary">@ralativityspace</div>
+                        </div>
+                        <div class="col-3">
+                            <a class="m-2 btn btn-primary btn-sm rounded-pill text-right float-end" href="#"
+                               role="button">Follow</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-3"><img class="float-end rounded-pill" src="../../images/virgingalalogo.svg" height="100px"></div>
+                        <div class="col-6">
+                            <div class="fw-bolder d-inline-flex">Virgin Galactic</div><i class="fa-solid fa-circle-check d-inline-flex ms-1"></i>
+                            <div class="text-secondary">@virgingalactic</div>
+                        </div>
+                        <div class="col-3">
+                            <a class="m-2 btn btn-primary btn-sm rounded-pill text-right float-end" href="#"
+                               role="button">Follow</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-3"><img class="float-end rounded-pill" src="../../images/nasalogo.jpg" height="100px"></div>
+                        <div class="col-6">
+                            <div class="fw-bolder d-inline-flex">NASA</div><i class="fa-solid fa-circle-check d-inline-flex ms-1"></i>
+                            <div class="text-secondary">@NASA</div>
+                        </div>
+                        <div class="col-3">
+                            <a class="m-2 btn btn-primary btn-sm rounded-pill text-right float-end" href="#"
+                               role="button">Follow</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-3"><img class="float-end rounded-pill" src="../../images/teslalogo.jpg" height="100px"></div>
+                        <div class="col-6">
+                            <div class="fw-bolder d-inline-flex">Tesla</div><i class="fa-solid fa-circle-check d-inline-flex ms-1"></i>
+                            <div class="text-secondary">@Tesla</div>
+                        </div>
+                        <div class="col-3">
+                            <a class="m-2 btn btn-primary btn-sm rounded-pill text-right float-end" href="#"
+                               role="button">Follow</a>
+                        </div>
+                    </div>
+                </li>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
         </div>
+
+
+
+
 
 
 

@@ -1,5 +1,3 @@
-
-
 body{
     /*font-family: "Arial";
     background-color: black;
@@ -8,6 +6,23 @@ body{
     color: white;
     padding-left: 16px;*/
 }
+
+.wd-search-tuiter {
+    background-color: white;
+    bottom: 6px;
+    left: 20px;
+}
+.wd-gear {
+    display: inline;
+    font-size: 20px;
+    position: absolute;
+    border-style: hidden;
+}
+
+
+
+
+
 
 .wd-top {
     padding: 5px;
@@ -33,14 +48,7 @@ body{
     overflow: hidden;
 }
 
-.wd-gear {
-    color: rgb(29,161,242);
-    display: inline;
-    content: "\2699";
-    font-size: 30px;
-    position: absolute;
-    margin-left: 12px;
-}
+
 
 .wd-nav-tabs li a{
     float: left;
