@@ -1,0 +1,121 @@
+body {
+    background-color: black;
+    font-family: "Noto Sans", sans-serif;
+    border-style: none;
+    border-color: rgb(47, 41, 54);
+    padding-left: 16px;
+    margin-top: 20px;
+    color: white;
+}
+
+.bg-item {
+    background-color: black;
+}
+
+.wd-topBar {
+    font-family: "Noto Sans", sans-serif;
+}
+
+.wd-magnifying-icon {
+
+    background-color: black;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-style: hidden
+}
+
+.wd-right-searchBar-icon {
+    background-color: black;
+    border-style: hidden;
+}
+
+.wd-searchBar {
+    background-color: white;
+    border-radius: 100%;
+    border-style: hidden;
+}
+
+.wd-gear {
+    color: rgb(29,161,242);
+    border-style: hidden;
+    display: inline-block;
+    font-size: 25px;
+
+}
+
+#fa-icon {
+    margin-left: 3px;
+}
+
+form {
+    display: inline;
+    width: 90%
+}
+
+li {
+    font-size: 12px;
+}
+
+.wd-navBar-left {
+    background-color: #202020;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.wd-topic {
+    font-size: 13px;
+    color: rgb(110, 118, 125)
+}
+
+.wd-author {
+    color: white;
+}
+
+.wd-grid-row {
+    clear: both;
+    padding-left: 2%;
+}
+
+#selector-1 {
+    padding: 10px;
+}
+
+.wd-title {
+    color: white;
+    font-weight: 600;
+}
+
+
+h5 {
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-flex;
+}
+
+h6 {
+    font-size: 11px;
+    color: gray;
+    display: inline-flex;
+}
+
+.wd-flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.wd-search-box{
+    border: 1px solid darkgray;
+    width: 80%;
+}
+
+.wd-border-radius {
+    border-radius: 50px;
+}
+
+.wd-bg-white {
+    background-color: white;
+}
