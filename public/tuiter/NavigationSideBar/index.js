@@ -9,8 +9,8 @@ const NavigationSideBar = (activeElement) => {
                 <li class="nav-item list-group-item list-group-item-action p-0 m-0">
                     <a class="nav-link"  href="#"><i class="fas fa-home" style="color: white; padding-right: 10px;"></i><span class="d-none d-xxl-inline-block d-xl-inline-block" style="color: white">Home</span></a>
                 </li>
-                <li class="nav-item list-group-item list-group-item-action active p-0 m-0">
-                    <a class="nav-link list-group-item list-group-item-action active" aria-current="page" href="#">
+                <li class="nav-item list-group-item list-group-item-action p-0 m-0">
+                    <a class="nav-link list-group-item list-group-item-action" aria-current="page" href="#">
                         <i class="fas fa-hashtag" style="padding-right: 10px;"></i>
                         <span class="d-none d-xxl-inline-block d-xl-inline-block"> Explore</span>
                     </a>
