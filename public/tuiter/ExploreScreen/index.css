@@ -8,10 +8,6 @@ body {
     color: white;
 }
 
-.bg-item {
-    background-color: black;
-}
-
 .wd-topBar {
     font-family: "Noto Sans", sans-serif;
 }
@@ -119,3 +115,4 @@ h6 {
 .wd-bg-white {
     background-color: white;
 }
+

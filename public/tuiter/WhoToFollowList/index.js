@@ -4,7 +4,7 @@ import who from "./who.js";
 const WhoToFollowList = () => {
     return (`    
         <div class="list-group">
-            <div class="list-group-item fw-bold"> Who to follow </div> 
+            <div class="list-group-item fw-bold"> Who to follow </div>   
             <ul class="list-group-item">
                 ${
                     who.map(who => {
@@ -12,6 +12,7 @@ const WhoToFollowList = () => {
                     }).join('')
                 }
             </ul>
+            </div>
         </div>
     `);
 }
