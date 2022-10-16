@@ -24,6 +24,7 @@ $(init);
             </div>
         </div>
     `);
+    $("#liHome").addClass("active");
 })($);
 
 

@@ -11,11 +11,13 @@ const PostItem = (post) => {
                     <div class='wd-flex-column d-inline-block'>
                         <img src=${post.profilePhoto} height="40px" width="40px" class="wd-borderRadiusCircle me-2">
                     </div>
-                    <div class='wd-flex-column ps-2'>
-                        <div>
-                            <span class="wd-font13 wd-whiteFont wd-fontBold">${post.username} </span> 
+                    <div class='wd-flex-column ps-2 w-100'>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                 <span class="wd-font13 wd-whiteFont wd-fontBold">${post.username} </span> 
                             ${post.verified ? verifiedIcon : ``}
                             <span class="wd-font13 wd-lightGreyFont"> @${post.handle} · ${post.time} </span> 
+                            </div>
                             <i class="fas fa-ellipsis-h wd-flex-noWrap"></i>
                         </div>
                         

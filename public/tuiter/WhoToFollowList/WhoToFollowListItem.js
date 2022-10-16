@@ -1,6 +1,5 @@
 const WhoToFollowListItem = (who) => {
-    return (` 
-                   
+    return (`  
             <li class="row pb-2 list-group-item">
                 <div class="row ps-2 pe-sm-0">
                     <div style="width: 15%" >

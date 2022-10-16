@@ -18,4 +18,5 @@ import WhoToFollowList from "../WhoToFollowList/index.js";
             </div>
         </div>
     `);
+    $("#liExplore").addClass("active");
 })($);

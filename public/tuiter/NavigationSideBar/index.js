@@ -5,14 +5,19 @@ const NavigationSideBar = (activeElement) => {
     return (`
     <div class="list-group">
             <ul class="nav flex-column mb-3 mb-sm-0">
-                <li class="nav-item list-group-item list-group-item-action p-0 m-0"><i class="fas fa-tenge nav-link" style="color: white; padding-right: 10px;"></i></li>
                 <li class="nav-item list-group-item list-group-item-action p-0 m-0">
-                    <a class="nav-link"  href="#"><i class="fas fa-home" style="color: white; padding-right: 10px;"></i><span class="d-none d-xxl-inline-block d-xl-inline-block" style="color: white">Home</span></a>
+                    <i class="fas fa-tenge nav-link" style="color: white; padding-right: 10px;"></i>
                 </li>
-                <li class="nav-item list-group-item list-group-item-action p-0 m-0">
-                    <a class="nav-link list-group-item list-group-item-action" aria-current="page" href="#">
-                        <i class="fas fa-hashtag" style="padding-right: 10px;"></i>
-                        <span class="d-none d-xxl-inline-block d-xl-inline-block"> Explore</span>
+                <li class="nav-item list-group-item list-group-item-action p-0 m-0" id="liHome">
+                    <a class="nav-link"  href="../HomeScreen/index.html">
+                        <i class="fas fa-home" style="color: white; padding-right: 10px;"></i>
+                        <span class="d-none d-xxl-inline-block d-xl-inline-block" style="color: white">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item list-group-item list-group-item-action p-0 m-0" id="liExplore">
+                    <a class="nav-link" href="../ExploreScreen/index.html">
+                        <i class="fas fa-hashtag" style="color: white; padding-right: 10px;"></i>
+                        <span class="d-none d-xxl-inline-block d-xl-inline-block" style="color: white">Explore</span>
                     </a>
                 </li>
                 <li class="nav-item list-group-item list-group-item-action p-0 m-0">
