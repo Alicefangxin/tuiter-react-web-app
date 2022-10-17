@@ -6,7 +6,7 @@ const NavigationSideBar = (activeElement) => {
     <div class="list-group">
             <ul class="nav flex-column mb-3 mb-sm-0">
                 <li class="nav-item list-group-item list-group-item-action p-0 m-0">
-                    <i class="fas fa-tenge nav-link" style="color: white; padding-right: 10px;"></i>
+                    <i class="fab fa-twitter nav-link" style="color: white; padding-right: 10px;"></i>
                 </li>
                 <li class="nav-item list-group-item list-group-item-action p-0 m-0" id="liHome">
                     <a class="nav-link"  href="../HomeScreen/index.html">
