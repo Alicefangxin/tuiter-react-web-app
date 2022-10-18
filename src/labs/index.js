@@ -1,11 +1,12 @@
 import Assignment6 from "./a6";
-
+import Nav from "../../src/nav";
 function Labs() {
-    return(
+    return (
         <div>
-
+            <Nav/>
             <Assignment6/>
         </div>
     );
 }
 export default Labs;
+
