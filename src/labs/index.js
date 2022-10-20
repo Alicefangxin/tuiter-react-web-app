@@ -5,6 +5,7 @@ function Labs() {
         <div>
             <Nav/>
             <Assignment6/>
+
         </div>
     );
 }
