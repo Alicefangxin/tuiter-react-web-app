@@ -35,13 +35,22 @@
 }
 input.wd-searchBox:focus{ outline: none;}
 .wd-borderRadius50 {border-radius: 50px;}
+.wd-borderRadiusCircle {border-radius: 50%;}
 
 .wd-font-image {font-size: 40px;}
 .wd-fontBold {font-weight: bold;}
 .wd-textCenter {text-align: center}
 .wd-whiteFont {color:var(--white);}
+.wd-blackFont {color:var(--black);}
 
 .nav-item.nav-link{
     border: 0px;
 }
+
+:root {
+    --lightGrey: rgb(110, 118, 125);
+    --darkGrey: rgb(47, 51, 54);
+}
+
+
 

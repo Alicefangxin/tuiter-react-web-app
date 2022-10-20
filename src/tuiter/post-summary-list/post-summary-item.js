@@ -1,34 +1,30 @@
 import React from "react";
 
-
-const PostSummaryItem = (
-    {
-        post = {
-            "topic": "Space",
-            "userName": "SpaceX",
-            "time": "2h",
-            "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-            "image": "./images/teslalogo.jpg"
-        }
-    }
-) => {
-return (
-        <div className={"row"}>
-            <div>
-                <h6 className={"d-inline-flex"}>{post.topic}</h6>
+const PostSummaryItem = ({ post, key }) => {
+    return (
+        <a key={key} href="/" className="list-group-item list-group-item-action wd-transparentBG wd-noLinkOutline">
+            <div className="wd-flex-row wd-flex-justifySpaceBetween wd-flex-alignCenter">
+                <div className="wd-flex-row pe-2">
+                    <div className="wd-flex-column">
+                        <div>
+                            <span className="text-secondary">{post.topic}</span>
+                            <br />
+                            <b className="text-black">{post.userName}</b> &nbsp;
+                            <span className="fa-stack fa-xs" style={{ fontSize: "1rem" }}>
+                                <i className="fas fa-check-circle fa-inverse fa-stack-1x wd-blackFont" ></i>
+                            </span>
+                            <span className="text-secondary">- {post.time}</span>
+                        </div>
+                        <div className="text-black">{post.title}</div>
+                        {post.tweets && <span className="text-secondary">{post.tweets} Tuits</span>}
+                    </div>
+                </div>
                 <div>
-                    <h5 className={"d-inline-flex"}>{post.userName}
-                    <span className="fa-stack fa-xs" style={{ fontSize: "0.5rem" }}>
-                                                    <i className="fas fa-certificate fa-stack-2x wd-whiteFont" ></i>
-                                                    <i className="fas fa-check fa-inverse fa-stack-1x wd-blackFont" ></i>
-                                                </span>
-                    </h5><img src={post.image} width="80px" height="80px" className={"wd-center-content-img align-self-center float-end rounded"}/>
-                    <h6 className={"d-inline-flex"}>- {post.time}</h6>
-                    <h5 className={"d-flex"}>{post.title}</h5>
+                    <img src={post.image} width="80px" height="80px" className="rounded" alt=""/>
                 </div>
             </div>
-        </div>
+        </a>
     )
 }
-export default PostSummaryItem;
 
+export default PostSummaryItem
