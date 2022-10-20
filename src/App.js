@@ -9,6 +9,7 @@ import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
 import HomeScreen from "./tuiter/HomeScreen/index";
 import ExploreScreen from "./tuiter/ExploreScreen/index";
+import tuiter from "./tuiter/index";
 
 function App() {
     return (
