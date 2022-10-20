@@ -1,4 +1,6 @@
 import React from "react";
+
+
 const PostSummaryItem = (
     {
         post = {
@@ -6,24 +8,27 @@ const PostSummaryItem = (
             "userName": "SpaceX",
             "time": "2h",
             "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-            "image": "tesla.png"
+            "image": "./images/teslalogo.jpg"
         }
     }
 ) => {
-    return(
-        <li className="list-group-item">
-            <div className="row">
-                <div className="col-10">
-                    <div>{post.userName} . {post.time}</div>
-                    <div className="fw-bolder">{post.topic}</div>
-                    <div>{post.title}</div>
-                </div>
-                <div className="col-2">
-                    <img width={70} className="float-end rounded-3" src={`/images/${post.image}`}/>
+return (
+        <div className={"row"}>
+            <div>
+                <h6 className={"d-inline-flex"}>{post.topic}</h6>
+                <div>
+                    <h5 className={"d-inline-flex"}>{post.userName}
+                    <span className="fa-stack fa-xs" style={{ fontSize: "0.5rem" }}>
+                                                    <i className="fas fa-certificate fa-stack-2x wd-whiteFont" ></i>
+                                                    <i className="fas fa-check fa-inverse fa-stack-1x wd-blackFont" ></i>
+                                                </span>
+                    </h5><img src={post.image} width="80px" height="80px" className={"wd-center-content-img align-self-center float-end rounded"}/>
+                    <h6 className={"d-inline-flex"}>- {post.time}</h6>
+                    <h5 className={"d-flex"}>{post.title}</h5>
                 </div>
             </div>
-        </li>
-    );
-};
+        </div>
+    )
+}
 export default PostSummaryItem;
 

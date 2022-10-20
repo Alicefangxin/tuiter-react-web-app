@@ -19,7 +19,7 @@ function App() {
                     <Route path="/hello"
                            exact={true}
                            element={<HelloWorld/>}/>
-                    <Route path="/tuiter/explore"
+                    <Route path="/tuiter"
                            exact={true}
                            element={<Tuiter/>}/>
                 </Routes>
