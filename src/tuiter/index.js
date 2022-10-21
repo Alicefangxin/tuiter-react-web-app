@@ -1,6 +1,8 @@
 import Nav from "../../src/nav";
 import ExploreScreen from "./ExploreScreen/index";
 import {Link} from "react-router-dom";
+import HomeScreen from "./HomeScreen";
+
 
 
 
@@ -10,7 +12,6 @@ function Tuiter() {
             <div>
                 <Nav/>
                 <ExploreScreen/>
-                <Link to="/">Back</Link>
             </div>
 
         </>

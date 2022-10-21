@@ -3,6 +3,7 @@ import "./index.css";
 import NavigationSidebar from "../NavigationSidebar";
 import WhoToFollowList from "../who-to-follow-list/index";
 import ExploreComponent from "./ExploreComponent";
+import {Link} from "react-router-dom";
 
 const ExploreScreen = () => {
     return (
@@ -17,7 +18,9 @@ const ExploreScreen = () => {
             <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
                 <WhoToFollowList/>
             </div>
+            <Link to="/">Back</Link>
         </div>
+
     );
 };
 export default ExploreScreen;
