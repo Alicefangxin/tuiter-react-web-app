@@ -8,6 +8,8 @@ const NavigationSidebar = (
         active = 'explore'
     }
 ) => {
+    const {pathname} = useLocation();
+    const paths = pathname.split('/')
 
     return (
     <>

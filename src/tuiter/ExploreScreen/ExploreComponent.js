@@ -19,7 +19,7 @@ const ExploreComponent = () => {
             </div>
             <nav className="mb-3">
                 <div className="nav nav-tabs">
-                    <a className="nav-item nav-link active">For You</a>
+                    <a className="nav-item nav-link active rounded" style={{ color: "white" ,backgroundColor: "dodgerblue" }}>For You</a>
                     <a className="nav-item nav-link" href="#">Trending</a>
                     <a className="nav-item nav-link" href="#">News</a>
                     <a className="nav-item nav-link" href="#">Sports</a>
