@@ -43,6 +43,7 @@ const PostItem = ({ post, key }) => {
                                 <br />
                                 <i className="fa fa-link" aria-hidden="true" style={{ color: "rgb(110, 118, 125)" }}></i>
                                 &nbsp; <span className="wd-lightGreyFont">{post.externalLink} </span>
+
                             </p>
                         </>
                     }

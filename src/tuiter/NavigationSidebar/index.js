@@ -14,9 +14,15 @@ const NavigationSidebar = (
     return (
     <>
          <div className="list-group">
+                        <Link to="/"
+                              className="list-group-item wd-noLinkLineDecor">
+                                <i class="fas fa-flask"></i>
+                            <span className="d-none d-xl-inline">Back to lab</span>
+                        </Link>
                         <Link to="#"
                               className="list-group-item wd-noLinkLineDecor">
-                            <span className="d-none d-xl-inline">Tuiter</span>
+                                <i class="fab fa-twitter"></i>
+                            
                         </Link>
                         <Link to="/tuiter/home"
                               className={`list-group-item wd-noLinkLineDecor ${active === 'home' ? 'active' : ''}`}>
