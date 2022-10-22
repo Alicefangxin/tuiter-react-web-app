@@ -5,6 +5,12 @@ const verifiedIcon = <span className="fa-stack fa-xs" style={{ fontSize: "1rem" 
     <i className="fas fa-check-circle fa-inverse fa-stack-1x wd-blackFont"></i>
 </span>
 
+const markTextAsLink = (title, markText) => {
+    let re = new RegExp(markText, 'g')
+    return (
+        title.replace(re, '<a href="#" class="text-decoration-none text-primary">' + markText + '</a>')
+    )
+}
 
 const PostItem = ({ post, key }) => {
     return (
@@ -22,12 +28,8 @@ const PostItem = ({ post, key }) => {
                             <span className=" wd-lightGreyFont"> @{post.handle} . {post.time} </span>
                         </div>
                         <i className="fas fa-ellipsis-h wd-flex-noWrap"></i>
-                        </div>
-
-
-                        <div className='mb-3'>
-                            <span className=" wd-whiteFont">{post.title}</span>
-                        </div>
+                        </div>            
+                        <div dangerouslySetInnerHTML={{__html: markTextAsLink(post.title, post.markText)}}/>
                     </div>
                 </div>
 
@@ -41,7 +43,7 @@ const PostItem = ({ post, key }) => {
                                 <br />
                                 <span className="wd-lightGreyFont">{post.description}</span>
                                 <br />
-                                <i className="fa fa-link" aria-hidden="true" style={{ color: "rgb(110, 118, 125)" }}></i>
+                                <i className="fa fa-link" style={{ color: "rgb(110, 118, 125)" }}></i>
                                 &nbsp; <span className="wd-lightGreyFont">{post.externalLink} </span>
 
                             </p>
