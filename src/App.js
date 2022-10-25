@@ -9,6 +9,8 @@ import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
 import HomeScreen from "./tuiter/HomeScreen/index";
 import ExploreScreen from "./tuiter/ExploreScreen/index";
+import Assignment7 from "./labs/a7";
+import Assignment6 from "./labs/a6";
 import tuiter from "./tuiter/index";
 
 function App() {
@@ -19,7 +21,7 @@ function App() {
                     <Route path="/hello"
                            exact={true}
                            element={<HelloWorld/>}/>
-                    <Route path="/"
+                    <Route path="/*"
                            exact={true}
                            element={<Labs/>}/>
                     <Route path="/tuiter"
@@ -27,6 +29,8 @@ function App() {
                            element={<Tuiter/>}/>
                     <Route path="/tuiter/home" element={<HomeScreen/>}/>
                     <Route path="/tuiter/explore" element={<ExploreScreen/>}/>
+
+
 
                 </Routes>
             </div>
