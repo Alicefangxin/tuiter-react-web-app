@@ -1,0 +1,15 @@
+{
+  "firstName": "Jose",
+  "lastName": "Annunziato",
+  "handle": "jannunzi",
+  "profilePicture": "./images/cat.jpg",
+  "bannerPicture": "./images/banner.jpg",
+  "bio": "Faculty, Software Engineer, AI, Space, and renewable enthusiast.\n  Retuits and likes are not endorsements.\n",
+  "website": "youtube.com/webdevtv",
+  "location": "Boston, MA",
+  "dateOfBirth": "7/7/1968",
+  "dateJoined": "4/2009",
+  "followingCount": 550,
+  "followersCount": 723
+}
+

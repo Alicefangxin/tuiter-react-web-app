@@ -1,22 +1,20 @@
-import Nav from "../../src/nav";
-import ExploreScreen from "./ExploreScreen/index";
-import {Link} from "react-router-dom";
-import HomeScreen from "./HomeScreen";
+import React from "react";
+import {Outlet} from "react-router-dom";
+import { combineReducers, createStore } from "redux";
+import { Provider } from "react-redux";
+import whoReducer from "./reducers/who-reducer";
+import tuitReducer from "./reducers/tuits-reducer";
+import profileReducer from "./reducers/profile-reducer"
 
+const reducer = combineReducers({ tuits: tuitReducer, who: whoReducer, profile: profileReducer });
+const store = createStore(reducer);
 
-
-function Tuiter() {
+const Tuiter = () => {
     return (
-        <>
-            <div>
-                <Nav/>
-                <ExploreScreen/>
-            </div>
-
-        </>
+        <Provider store={store}>
+            <Outlet/>
+        </Provider>
     )
 };
 
-export default Tuiter
-
-
+export default Tuiter;

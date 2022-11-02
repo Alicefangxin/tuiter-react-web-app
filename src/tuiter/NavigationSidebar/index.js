@@ -15,7 +15,7 @@ const NavigationSidebar = (
     <>
          <div className="list-group">
                         <Link to="/"
-                              className="list-group-item wd-noLinkLineDecor">
+                              className="list-group-item wd-noLinkLineDecor mt-3">
                                 <i class="fas fa-flask"></i>
                             <span className="d-none d-xl-inline">Back to lab</span>
                         </Link>
@@ -60,7 +60,7 @@ const NavigationSidebar = (
                             <span className="d-none d-xl-inline">&nbsp;Lists</span>
                         </Link>
 
-                        <Link to="#"
+                        <Link to="/tuiter/profile"
                               className={`list-group-item wd-noLinkLineDecor`}>
                             <i className="far fa-user wd-width20 wd-whiteFont"></i>
                             <span className="d-none d-xl-inline">&nbsp;Profile</span>

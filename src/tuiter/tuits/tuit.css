@@ -1,0 +1,30 @@
+.wd-avatar-image {
+    width: 48px;
+}
+.wd-borderRadius20px {border-radius: 20px;}
+
+.wd-width100 { width: 100%;}
+
+.wd-whiteFont {color:var(--white)!important;}
+.wd-lightGreyFont {color:var(--lightGrey);}
+.wd-fontBold {font-weight: bold}
+.wd-font30 {font-size: 30px !important}
+.wd-flex {display: flex}
+.wd-flex-row {display: flex !important; flex-direction: row !important;}
+.wd-flex-wrap {display: flex; flex-wrap: wrap;}
+.wd-font20 {font-size: 20px !important}
+.wd-flex-column {display: flex; flex-direction: column;}
+
+
+
+
+
+
+
+
+.wd-whiteBG{background-color: white !important}
+.wd-transparentBG {background-color: transparent !important}
+.wd-lightGreyBG {background-color: #F6F6F6 !important}
+.wd-darkGreyBG {background-color: var(--darkGrey) !important}
+.wd-blackBG {background-color: var(--black) !important}
+.wd-noBorders {border: 0px !important}
