@@ -70,7 +70,7 @@ const ProfileComponent = () => {
             />
 
             <button
-                className="border border-white wd-whiteBG wd-whiteFont wd-borderRadius20px pt-1 pb-1 ps-2 pe-2"
+                className="border border-gray wd-whiteBG wd-blackFont wd-borderRadius20px pt-1 pb-1 ps-2 pe-2"
                 style={{ float: "right", marginTop: "20px", marginRight: "20px" }}
                 onClick={editProfileClickHandler}
             >

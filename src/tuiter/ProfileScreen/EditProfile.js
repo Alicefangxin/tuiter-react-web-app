@@ -29,7 +29,7 @@ const EditProfile = () => {
 
                 &nbsp;&nbsp;&nbsp; Edit Profile
 
-                <button className="border-0 text-black bg-white wd-borderRadius20px pt-1 pb-1 ps-3 pe-3 float-right wd-font16" onClick={editProfileClickHandler}>
+                <button className="border-0 text-white bg-black wd-borderRadius20px ms-5 me-1 pt-1 pb-1 ps-3 pe-3 float-right wd-font16" onClick={editProfileClickHandler}>
                     Save
                 </button>
 
@@ -60,7 +60,7 @@ const EditProfile = () => {
                     <label for="name">Name</label>
                     <input
                         type="text"
-                        className="form-control bg-secondary text-white"
+                        className="form-control text-black"
                         id="name"
                         placeholder="Firstname and Lastname"
                         value={`${profileData.firstName} ${profileData.lastName}`}
@@ -77,7 +77,7 @@ const EditProfile = () => {
 
                 <div class="form-group">
                     <label for="bio">Bio</label>
-                    <textarea className="form-control bg-secondary text-white" id="bio" rows="3" value={profileData.bio}
+                    <textarea className="form-control text-black" id="bio" rows="3" value={profileData.bio}
                               onChange={(e) => {
                                   saveProfile({
                                       ...profileData,
@@ -89,7 +89,7 @@ const EditProfile = () => {
 
                 <div class="form-group">
                     <label for="location">Location</label>
-                    <input type="text" className="form-control bg-secondary text-white" id="location" value={profileData.location}
+                    <input type="text" className="form-control text-black" id="location" value={profileData.location}
                            onChange={(e) => {
                                saveProfile({
                                    ...profileData,
@@ -100,7 +100,7 @@ const EditProfile = () => {
 
                 <div class="form-group">
                     <label for="website">Website</label>
-                    <input type="text" className="form-control bg-secondary text-white" id="website" value={profileData.website}
+                    <input type="text" className="form-control text-black" id="website" value={profileData.website}
                            onChange={(e) => {
                                saveProfile({
                                    ...profileData,
@@ -111,7 +111,7 @@ const EditProfile = () => {
 
                 <div class="form-group">
                     <label for="birthday">Birthday</label>
-                    <input type="date" className="form-control bg-secondary text-white" id="birthday"
+                    <input type="date" className="form-control text-black" id="birthday"
                            value={getModifiedDate(profileData.dateOfBirth)}
                            onChange={(e) => {
                                let dateParts = e.target.value.split('-')
