@@ -39,11 +39,11 @@ const EditProfile = () => {
             <img
                 height="250px"
                 width="100%"
-                src={`/images/${profile.bannerPicture}`} alt=""
+                src={`./images/${profile.bannerPicture}`} alt=""
             />
 
             <img
-                src={`/images/${profile.profilePicture}`}
+                src={`./images/${profile.profilePicture}`}
                 width='150px'
                 height='150px'
                 className='rounded-circle border border-dark' alt=""
