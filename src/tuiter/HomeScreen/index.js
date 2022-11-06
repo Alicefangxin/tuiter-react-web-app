@@ -5,6 +5,7 @@ import NavigationSidebar from "../NavigationSidebar/index"
 import TuitList from "../tuits/index";
 import {Link} from "react-router-dom";
 import WhatsHappening from "../WhatsHappening/index";
+import WhoToFollowList from "../who-to-follow-list";
 
 const HomeScreen = () => {
     return (
@@ -17,7 +18,7 @@ const HomeScreen = () => {
                 <TuitList/>
             </div>
             <div className="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-                <PostSummaryList src="home" />
+                <WhoToFollowList src="home" />
             </div>
         </div>
     );

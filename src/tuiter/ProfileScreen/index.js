@@ -5,6 +5,7 @@ import PostSummaryList from "../post-summary-list";
 import EditProfile from "./EditProfile";
 import ProfileComponent from "./ProfileComponent";
 
+
 const ProfileScreen = () => {
 
     const isEditProfile = useSelector((state) => state.profile.isEditing)
@@ -19,6 +20,7 @@ const ProfileScreen = () => {
             </div>
             <div className="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 col-xxl-4">
                 <PostSummaryList src="profileReducer" />
+
             </div>
         </div>
     )
