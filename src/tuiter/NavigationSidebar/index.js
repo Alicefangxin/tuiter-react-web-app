@@ -3,13 +3,15 @@ import { Link } from "react-router-dom";
 import {useLocation} from "react-router";
 
 
+
 const NavigationSidebar = (
     {
-        active = 'explore'
+        //active = 'explore'
     }
 ) => {
     const {pathname} = useLocation();
     const paths = pathname.split('/')
+    const active = paths[2];
 
     return (
     <>
@@ -61,8 +63,8 @@ const NavigationSidebar = (
                         </Link>
 
                         <Link to="/tuiter/profile"
-                              className={`list-group-item wd-noLinkLineDecor`}>
-                            <i className="far fa-user wd-width20 wd-whiteFont"></i>
+                              className={`list-group-item wd-noLinkLineDecor ${active === 'profile' ? 'active' : ''}`}>
+                            <i className="fas fa-home wd-width20 wd-whiteFont"></i>
                             <span className="d-none d-xl-inline">&nbsp;Profile</span>
                         </Link>
 
