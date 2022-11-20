@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19ae93fc-809c-434e-9197-cdbf794d65d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/services/tuits-service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/tuits-thunks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tuiter/WhatsHappening/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tuiter/WhatsHappening/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tuiter/reducers/tuits-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tuiter/reducers/tuits-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tuiter/tuits/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tuiter/tuits/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tuiter/tuits/tuit-list-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tuiter/tuits/tuit-list-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tuiter/tuits/tuit-stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tuiter/tuits/tuit-stats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/tuits-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/tuits-service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +43,8 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -61,6 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668920647070</updated>
       <workItem from="1668920652666" duration="5955000" />
+      <workItem from="1668974457295" duration="629000" />
     </task>
     <servers />
   </component>
@@ -77,17 +73,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/services/tuits-service.js</url>
-          <line>1</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
