@@ -11,7 +11,7 @@ const TuitsStats = (
             userName: "Tesla",
             time: "4d",
             title: "Autopilot and Full Self-Driving Capability",
-            image: "tesla-logo.png",
+            image: "./images/teslalogo.jpg",
             liked: false,
             disliked: false,
             replies: 234,
