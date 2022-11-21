@@ -7,6 +7,7 @@
 
 .wd-whiteFont {color:var(--white);}
 .wd-lightGreyFont {color:var(--lightGrey);}
+.wd-redFont {color:red;}
 .wd-fontBold {font-weight: bold}
 .wd-font16 {font-size: 16px;}
 .wd-font30 {font-size: 30px;}
