@@ -1,62 +1,75 @@
-import React from "react";
-import { useDispatch } from "react-redux";
-import { updateTuitThunk } from "../../services/tuits-thunks";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowUpFromBracket, faComment, faHeart, faRetweet, faThumbsDown} from "@fortawesome/free-solid-svg-icons";
+import {updateTuitThunk} from "../../services/tuits-thunks";
+import {useDispatch} from "react-redux";
 
-
-const TuitStats = ({ tuit }) => {
-
+const TuitsStats = (
+    {
+        tuit = {
+            _id: 234,
+            topic: "Tesla",
+            userName: "Tesla",
+            time: "4d",
+            title: "Autopilot and Full Self-Driving Capability",
+            image: "tesla-logo.png",
+            liked: false,
+            disliked: false,
+            replies: 234,
+            retuits: 543,
+            likes: 3456,
+            dislikes: 123,
+            handle: "@tesla",
+            tuit: "Autopilot is an advanced driver assistance system that enhances safety and convenience behind the wheel. When used properly, Autopilot reduces your overall workload as a driver. Each new Tesla vehicle is equipped with eight external cameras and powerful vision processing to provide an additional layer of safety. All vehicles built for the North American market now use our camera-based Tesla Vision to deliver Autopilot features, rather than radar. All vehicles built for the North American market now use our camera-based Tesla Vision to deliver Autopilot features, rather than radar."
+        }
+    }
+) => {
     const dispatch = useDispatch();
 
-    const likeClickHandler = () => {
-        dispatch({ type: 'like-tuit', tuit });
-    };
+    const clickLikeHeartHandler = () => {
+        const updatedTuit = {
+            ...tuit,
+            likes : tuit.liked ? tuit.likes - 1 : tuit.likes + 1,
+            liked : !tuit.liked
+        };
+        dispatch(updateTuitThunk(updatedTuit))
+    }
 
-    return (
+    const clickDislikeThumbHandler = () => {
+        const updatedTuit = {
+            ...tuit,
+            dislikes : tuit.disliked ? tuit.dislikes - 1 : tuit.dislikes + 1,
+            disliked : !tuit.disliked
+        };
+        dispatch(updateTuitThunk(updatedTuit))
+    }
 
-        <div className="row mt-2">
-
-            <div className="col">
-                {tuit.comments}&nbsp;&nbsp;
-                <i className="far fa-comment me-2"></i>
-
-
+    return(
+        <>
+            <div className="row justify-content-evenly">
+                <button className="col text-secondary border-0 bg-transparent text-start">
+                    <FontAwesomeIcon icon={faComment} className="pe-1 pe-sm-2" />
+                    <span>{tuit.replies}</span>
+                </button>
+                <button className="col text-secondary border-0 bg-transparent text-start">
+                    <FontAwesomeIcon icon={faRetweet} className="pe-1 pe-sm-2" />
+                    <span>{tuit.retuits}</span>
+                </button>
+                <button className="col text-secondary border-0 bg-transparent text-start" onClick={clickLikeHeartHandler}>
+                    {tuit.liked && <FontAwesomeIcon icon={faHeart} color={ 'red' } className="pe-1 pe-sm-2"/>}
+                    {!tuit.liked && <FontAwesomeIcon icon={faHeart} className="pe-1 pe-sm-2" />}
+                    <span>{tuit.likes}</span>
+                </button>
+                <button className="col text-secondary border-0 bg-transparent text-start" onClick={clickDislikeThumbHandler}>
+                    {tuit.disliked && <FontAwesomeIcon icon={faThumbsDown} color={ 'gray' } className="pe-1 pe-sm-2"/>}
+                    {!tuit.disliked && <FontAwesomeIcon icon={faThumbsDown} className="pe-1 pe-sm-2"/>}
+                    <span>{tuit.dislikes}</span>
+                </button>
+                <button className="col text-secondary border-0 bg-transparent text-start">
+                    <FontAwesomeIcon icon={faArrowUpFromBracket} className="pe-1 pe-sm-2" />
+                </button>
             </div>
-
-            <div className="col">
-                {tuit.retweets}&nbsp;&nbsp;
-                <i className="fas fa-retweet me-2"></i>
-
-            </div>
-
-            <div className="col">
-
-                <label>
-                    {tuit.likes}
-                    <i onClick={() => updateTuitThunk(dispatch, {
-                        ...tuit,
-                        likes: tuit.likes + 1
-                    })} className="far fa-thumbs-up ms-3 me-2"></i>
-                </label>
-            </div>
-
-            <div className="col">
-
-                <label>
-                    {tuit.dislikes}
-                    <i onClick={() => updateTuitThunk(dispatch, {
-                        ...tuit,
-                        dislikes: tuit.dislikes + 1
-                    })} className="far fa-thumbs-down ms-3 me-2"></i>
-                </label>
-            </div>
-
-
-            <div className="col">
-                <i className="fas fa-external-link-alt me-2"></i>
-            </div>
-
-        </div>
+        </>
     )
 }
 
-export default TuitStats;
+export default TuitsStats;
