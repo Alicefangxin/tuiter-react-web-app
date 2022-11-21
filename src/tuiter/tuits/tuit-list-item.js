@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import './tuit.css';
 import TuitStats from "./tuit-stats";
-import {deleteTuit} from "../../services/tuits-thunks";
+import {deleteTuitsThunk} from "../../services/tuits-thunks";
 
 const TuitListItem = ({ tuit }) => {
 
@@ -26,7 +26,7 @@ const TuitListItem = ({ tuit }) => {
 
                     <td className="ps-3 wd-width100">
 
-                        <i onClick={deleteTuit(
+                        <i onClick={deleteTuitsThunk(
                             dispatch, tuit)}  className="fas fa-times fa-pull-right"></i>
                         <span className="fw-bold">{tuit.userName}</span>
                         {tuit.verified && <i className="ms-1 fas fa-badge-check"></i>}

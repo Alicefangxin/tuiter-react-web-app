@@ -58,41 +58,5 @@
       "retweets": 42,
       "likes": 543
     }
-  },
-  {
-    "_id": "345",
-    "topic": "Web Development",
-    "userName": "jQuery",
-    "verified": false,
-    "handle": "jQuery",
-    "title": "jQuery",
-    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "time": "last week",
-    "logo-image": "./images/jquery-logo.jpg",
-    "avatar-image": "./images/jquery-logo.jpg",
-    "tuits": "122K",
-    "stats": {
-      "comments": 444,
-      "retweets": 55,
-      "likes": 666
-    }
-  },
-  {
-    "_id": "456",
-    "topic": "Web Development",
-    "userName": "NodeJS",
-    "verified": true,
-    "handle": "NodeJS",
-    "title": "",
-    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars.",
-    "time": "last month",
-    "logo-image": "./images/nodejs.jpg",
-    "avatar-image": "./images/nodejs.jpg",
-    "tuits": "120K",
-    "stats": {
-      "comments": 789,
-      "retweets":12 ,
-      "likes": 345
-    }
   }
 ]

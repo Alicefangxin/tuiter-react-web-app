@@ -1,40 +1,22 @@
-//import { createAsyncThunk } from "@reduxjs/toolkit";
-import * as service from "./tuits-service";
+import {createAsyncThunk} from "@reduxjs/toolkit";
 
-export const CREATE_TUIT = 'CREATE_TUIT';
-export const FIND_ALL_TUITS = 'FIND_ALL_TUITS';
-export const UPDATE_TUIT = 'UPDATE_TUIT';
-export const DELETE_TUIT = 'DELETE_TUIT';
+import * as service from './tuits-service';
 
-export const createTuit = async (dispatch, tuit) => {
-    const newTuit = await service.createTuit(tuit);
-    dispatch({
-        type: CREATE_TUIT,
-        newTuit
-    });
-}
+export const findTuitsThunk = createAsyncThunk(
+    'tuits/findTuits', async () => await service.findTuits()
+)
 
+export const deleteTuitsThunk = createAsyncThunk(
+    'tuits/deleteTuit', async (tuitId) => {
+        await service.deleteTuit(tuitId);
+        return tuitId;
+    }
+)
 
-export const findAllTuits = async (dispatch) => {
-    const tuits = await service.findAllTuits();
-    dispatch({
-        type: FIND_ALL_TUITS,
-        tuits
-    });
-}
-export const updateTuit = async (dispatch, tuit) => {
-    const status = await service.updateTuit(tuit);
-    dispatch({
-        type: UPDATE_TUIT,
-        tuit
-    });
-}
+export const createTuitThunk = createAsyncThunk(
+    'tuits/createTuit', async (newTuit) => await service.createTuit(newTuit)
+)
 
-
-export const deleteTuit = async (dispatch, tuit) => {
-    const response = await service.deleteTuit(tuit);
-    dispatch({
-        type: DELETE_TUIT,
-        tuit
-    })
-}
+export const updateTuitThunk = createAsyncThunk(
+    'tuits/updateTuit', async (tuit) => await service.updateTuit(tuit)
+)

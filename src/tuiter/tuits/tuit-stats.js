@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { updateTuit } from "../../services/tuits-thunks";
+import { updateTuitThunk } from "../../services/tuits-thunks";
 
 
 const TuitStats = ({ tuit }) => {
@@ -32,7 +32,7 @@ const TuitStats = ({ tuit }) => {
 
                 <label>
                     {tuit.likes}
-                    <i onClick={() => updateTuit(dispatch, {
+                    <i onClick={() => updateTuitThunk(dispatch, {
                         ...tuit,
                         likes: tuit.likes + 1
                     })} className="far fa-thumbs-up ms-3 me-2"></i>
@@ -43,7 +43,7 @@ const TuitStats = ({ tuit }) => {
 
                 <label>
                     {tuit.dislikes}
-                    <i onClick={() => updateTuit(dispatch, {
+                    <i onClick={() => updateTuitThunk(dispatch, {
                         ...tuit,
                         dislikes: tuit.dislikes + 1
                     })} className="far fa-thumbs-down ms-3 me-2"></i>
