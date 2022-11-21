@@ -48,11 +48,11 @@ const TuitsStats = (
             <div className="row justify-content-evenly">
                 <button className="col text-secondary border-0 bg-transparent text-start">
                     <FontAwesomeIcon icon={faComment} className="pe-1 pe-sm-2" />
-                    <span>{tuit.replies}</span>
+                    <span className="text-secondary">{tuit.replies}</span>
                 </button>
-                <button className="col text-secondary border-0 bg-transparent text-start">
+                <button className="col wd-lightGreyFont text-secondary border-0 bg-transparent text-start">
                     <FontAwesomeIcon icon={faRetweet} className="pe-1 pe-sm-2" />
-                    <span>{tuit.retuits}</span>
+                    <span className="text-secondary">{tuit.retuits}</span>
                 </button>
                 <button className="col text-secondary border-0 bg-transparent text-start" onClick={clickLikeHeartHandler}>
                     {tuit.liked && <FontAwesomeIcon icon={faHeart} color={ 'red' } className="pe-1 pe-sm-2"/>}
